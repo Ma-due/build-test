@@ -37,7 +37,7 @@ pipeline {
             --context=dir://${env.WORKSPACE} \
             --cache=true \
             --cache-repo=nexus.ihp001.dev/build-test/cache \
-            --destination=nexus.ihp001.dev/build-test${env.BUILD_NUMBER} \
+            --destination=nexus.ihp001.dev/build-test:${env.BUILD_NUMBER} \
             --destination=nexus.ihp001.dev/build-test:latest"
         }
       }
